@@ -14,3 +14,7 @@ services:
       - 2019:2019
       - 80:80
       - 443:443
+
+networks:
+  default:
+    name: 0x1c-net
