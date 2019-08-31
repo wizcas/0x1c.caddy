@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  caddy-gateway:
+    image: caddy-gateway
+    build: .
+    volumes:
+      - type: bind
+        source: ./Caddyfile
+        target: /caddy/Caddyfile
+    ports:
+      - 2019:2019
