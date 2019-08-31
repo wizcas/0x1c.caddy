@@ -12,6 +12,6 @@ WORKDIR /caddy/
 COPY --from=builder /usr/local/bin .
 COPY ./intro .
 EXPOSE 2019
-ENTRYPOINT ["./caddy"]
+ENTRYPOINT ["./caddy", "-agree"]
 
 
