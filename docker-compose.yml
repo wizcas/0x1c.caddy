@@ -3,6 +3,7 @@ version: '3.7'
 services:
   caddy-gateway:
     image: caddy-gateway
+    container_name: caddy-gateway
     build: .
     volumes:
       - type: bind
