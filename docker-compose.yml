@@ -8,7 +8,7 @@ services:
       - type: bind
         source: ./Caddyfile
         target: /caddy/Caddyfile
-      - ./.caddy:/caddy/.caddy
+      - ./.caddy:/root/.caddy
     ports:
       - 2019:2019
       - 80:80
